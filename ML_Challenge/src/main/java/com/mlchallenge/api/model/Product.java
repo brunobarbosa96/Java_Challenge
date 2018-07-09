@@ -1,21 +1,17 @@
 package com.mlchallenge.api.model;
 
+import java.io.Serializable;
+
 import javax.validation.constraints.NotNull;
 
-public class Product {
+public class Product implements Serializable {
 
-	@NotNull
 	private String id;
-	@NotNull
 	private String ean;
-	@NotNull
 	private String title;
-	@NotNull
 	private String brand;
-	@NotNull
-	private double price;
-	@NotNull
-	private int stock;
+	private String price;
+	private String stock;
 
 	public String getId() {
 		return id;
@@ -41,16 +37,16 @@ public class Product {
 	public void setBrand(String brand) {
 		this.brand = brand;
 	}
-	public double getPrice() {
+	public String getPrice() {
 		return price;
 	}
-	public void setPrice(double price) {
+	public void setPrice(String price) {
 		this.price = price;
 	}
-	public int getStock() {
+	public String getStock() {
 		return stock;
 	}
-	public void setStock(int stock) {
+	public void setStock(String stock) {
 		this.stock = stock;
 	}
 	
