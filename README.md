@@ -27,31 +27,33 @@ Para retornar default basta não informar nenhum valor.
 
 No corpo da requisição irá receber uma lista de objetos no formato JSON.
 Exemplo Body:
-[					 
-    {									
-        "id":	"123",									
-        "ean":	"7898100848355",									
-        "title":	"Cruzador	espacial	Nikana	- 3000m	- sem	garantia",									
-        "brand":	"nikana",									
-        "price":	820900.90,									
-        "stock":	1					
-    },					
-    {									
-        "id":	"u7042",									
-        "ean":	"7898054800492",									
-        "title":	"Espada	de	fótons	Nikana	Azul",									
-        "brand":	"nikana",									
-        "price":	2199.90,									
-        "stock":	82				
-    },					
-    {									
-        "id":	"bb2r3s0",									
-        "ean":	"2059251400402",									
-        "title":	"Corredor	POD	3000hp	Nikana",					
-        "brand":	"nikana",									
-        "price":	17832.90,									
-        "stock":	8					
+[
+
+    {
+        "id":     "123",
+        "ean":	 "7898100848355",
+        "title":	"Cruzador	espacial	Nikana	- 3000m	- sem	garantia",
+        "brand":	"nikana",
+        "price":	820900.90,
+        "stock":    1
+    },
+    {
+        "id":	"u7042",
+        "ean":	"7898054800492",
+        "title":	"Espada	de	fótons	Nikana	Azul",
+        "brand":	"nikana",
+        "price":	2199.90,
+        "stock":	82
+    },
+    {
+        "id":	"bb2r3s0",
+        "ean":	"2059251400402",
+        "title":	"Corredor	POD	3000hp	Nikana",
+        "brand":	"nikana",
+        "price":	17832.90,
+        "stock":	8
     }
+    
 ]
 
 # Payload de Resposta
@@ -61,9 +63,11 @@ Em caso de sucesso na requisição, irá retornar status code 200 e o conteúdo 
 {
     "data": [
         {
+        
             "description": "Cruzador\tespacial\tNikana\t- 3000m\t- sem\tgarantia",
             "items": [
                 {
+                
                     "id": "123",
                     "ean": "7898100848355",
                     "title": "Cruzador\tespacial\tNikana\t- 3000m\t- sem\tgarantia",
@@ -71,7 +75,10 @@ Em caso de sucesso na requisição, irá retornar status code 200 e o conteúdo 
                     "price": "820900.90",
                     "stock": "1"
                 }
+                
             ]
+            
         }
+        
     ]
 }
