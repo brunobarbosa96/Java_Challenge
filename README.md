@@ -4,15 +4,17 @@ Este repositório se destina ao desafio técnico na linguagem java.  O desafio c
 
 O endpoint foi escrito em Java 8 utilizando o maven.
 
-#startup
+# Startup
 
 Executar os seguintes comandos.
 
 $ mvn clean
+
 $ mvn install
+
 $ java -jar target/ML_Challenge-1.0.0-SNAPSHOT.jar 
 
-#Payload de Entrada
+# Payload de Entrada
 
 Verbo utilizado: POST
 URI: localhost:5000/products/groupAndSort?filter=&order_by=&group_by=
@@ -52,7 +54,7 @@ Exemplo Body:
     }
 ]
 
-#Payload de Resposta
+# Payload de Resposta
 
 Em caso de sucesso na requisição, irá retornar status code 200 e o conteúdo no seguinte formato (exemplo):
 
